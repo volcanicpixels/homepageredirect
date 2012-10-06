@@ -28,6 +28,20 @@ class Lava extends Lava_Plugin {
 	#	Auto Hooks
 	#####################
 
+	function _get_header() {
+		if( is_front_page() ) {
+			//get most recent post
+			$args = array(
+				'numberposts' => 1,
+
+			);
+			$posts = wp_get_recent_posts( $args );
+			$permalink = get_permalink( $posts[0]['ID'] );
+			wp_redirect( $permalink );
+			exit;
+		}
+	}
+
 
 
 	#####################

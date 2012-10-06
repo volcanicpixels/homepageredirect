@@ -1,9 +1,11 @@
-name: Blank Plugin
+name: Homepage redirector
 version: "1.0"
-description: Blank Plugin - update configuration in lava.yaml
-url: http://www.google.com
+description: A small plugin to redirect the homepage to the latest post.
+url: 
 author: Daniel Chatfield
 contributors: volcanicpixels
-tags: ''
+tags: homepage, redirector, redirect, latest post, recent
 license: GPLv2
-class_namespace: Volcanic_Pixels_Blank_Plugin
+class_namespace: Volcanic_Pixels_Homepage_Redirector
+
+test_server: C:\Users\Daniel\Documents\My Web Sites\Volcanic Pixels\wp-content\plugins\homepage-redirect
